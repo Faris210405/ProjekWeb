@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Number Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Scientific Number Checker</h1>
+        <div class="menu">
+            <div class="dropdown">
+                <button class="menu-btn">File</button>
+                <div class="dropdown-content">
+                    <button onclick="saveText()">Save</button>
+                    <button onclick="saveAsText()">Save As</button>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="menu-btn">Edit</button>
+                <div class="dropdown-content">
+                    <button onclick="copyText()">Copy</button>
+                    <button onclick="pasteText()">Paste</button>
+                </div>
+            </div>
+            <button class="menu-btn" onclick="run()">Run</button>
+            <button class="menu-btn" onclick="aboutUs()">About Us</button>
+        </div>
+        <input type="text" id="numberInput" placeholder="Enter a number">
+        <button class="check-btn" onclick="checkNumber()">Check</button>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
